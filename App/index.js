@@ -1,6 +1,6 @@
-let scrapBtn = document.getElementById('btn-profile')
+let btnscrap = document.getElementById('scrap-profile')
 
-scrapBtn.addEventListener('click', async () => {
+btnscrap.addEventListener('click', async () => {
   const [tab] = await chrome.tabs.query({active: true, currentWindow: true});
 
   if (tab!== null) {
